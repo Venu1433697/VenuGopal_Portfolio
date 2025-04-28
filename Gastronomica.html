@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gastronomica - AWS DevOps Engineer Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f3f3; /* Light beige background */
+    }
+    .wave-shape {
+      border-bottom-left-radius: 40% 20%;
+      border-bottom-right-radius: 40% 20%;
+    }
+    .section-header {
+      background-color: #8fd3e8; /* Soft sky blue background */
+      padding: 10px 20px;
+      border-radius: 10px;
+      border: 2px solid #0098a7; /* Light teal border */
+    }
+    .subsection-header {
+      background-color: #ffe0e0; /* Light coral pink background */
+      padding: 5px 15px;
+      border-radius: 10px;
+      border: 2px solid #f28d80; /* Peachy coral border */
+      color: #333; /* Dark text for better contrast */
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Gastronomica Logo and Heading Section -->
+  <div class="bg-white text-center py-20 relative overflow-hidden wave-shape">
+    <div class="relative z-10">
+      <!-- Logo -->
+      <a href="https://gastronomica.co.uk/" target="_blank">
+        <img src="gastronomica-logo.webp" alt="Gastronomica Logo" class="mx-auto w-28 mb-6">
+      </a>
+           
+      <!-- Title -->
+      <h1 class="text-6xl font-extrabold text-teal-700 drop-shadow-md">Gastronomica</h1>
+
+      <!-- Tagline -->
+      <div class="inline-block mt-6 border-2 border-teal-500 rounded-lg px-6 py-4">
+        <p class="text-indigo-500 text-xl font-bold">
+          Ignite Your Passion for Italian Food – Delivered to Your Door!
+        </p>
+      </div>
+    </div>
+
+    <!-- Light background curve effect -->
+    <div class="absolute top-0 left-0 right-0 bottom-0 bg-teal-100 rounded-b-full z-0" style="height: 200px;"></div>
+  </div>
+
+  <!-- Introduction -->
+  <section class="max-w-5xl mx-auto p-6 mt-10">
+    <h2 class="text-2xl font-semibold mb-4 text-teal-700 section-header">Short Introduction</h2>
+    <p class="text-lg">
+        Gastronomica (https://gastronomica.co.uk) is a premier e-commerce platform dedicated to authentic Italian food and drink products, delivering an exceptional shopping experience with fast, reliable delivery services across the UK. The platform offers a wide range of curated products, including charcuterie, cheeses, pastas, deli items, beers, wines, and gift cards, catering to food enthusiasts seeking high-quality Italian ingredients. With a user-friendly interface, customers can easily browse categories, search for products, and manage their accounts, while enjoying a seamless checkout process.
+    </p>
+  </section>
+
+  <!-- Features -->
+  <section class="bg-white py-10 mt-10">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-6 text-teal-700 section-header text-center">Feature List</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <ul class="list-disc list-inside space-y-3 text-lg">
+          <li>Charcuterie, Cheese</li>
+          <li>Special Offers</li>  
+          <li>Pasta, Delicatessen</li>  
+          <li>Beer & Wine</li>    
+          <li>Gift Cards</li>
+          <li>Wholesale options</li>
+          <li>Product Search</li>
+          <li>Wish List & Favorites</li>
+        </ul>
+        <ul class="list-disc list-inside space-y-3 text-lg">
+          <li>User Account Management</li>
+          <li>Shopping Cart</li>
+          <li>Direct Delivery</li>
+          <li>Responsive Design</li>
+          <li>Focus on Authentic Italian Cuisine</li>
+          <li>Wide Product Variety</li>
+          <li>Customer-Centric Experience</li>
+          <li>Premium Branding</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+<!-- Technologies Used -->
+<section class="max-w-6xl mx-auto px-6 py-10 mt-10 bg-teal-50">
+    <h2 class="text-2xl font-semibold mb-6 text-center text-teal-700 section-header">Technologies Used</h2>
+    <div class="grid md:grid-cols-2 gap-8 text-lg">
+      <!-- Left Section: General Stack -->
+      <div>
+        <div class="mb-6">
+          <h3 class="text-xl font-bold text-teal-700 subsection-header mb-2">Frontend:</h3>
+          <p>HTML5, CSS3, JavaScript, React.js/Vue.js, Tailwind CSS/Bootstrap, Nginx</p>
+        </div>
+        <div class="mb-6">
+          <h3 class="text-xl font-bold text-teal-700 subsection-header mb-2">Backend:</h3>
+          <p>Node.js/Express.js (or Python/Django), RESTful API, Redis, Stripe/PayPal integration</p>
+        </div>
+        <div class="mb-6">
+          <h3 class="text-xl font-bold text-teal-700 subsection-header mb-2">Database:</h3>
+          <p>PostgreSQL on AWS RDS, MongoDB (optional), Amazon S3 for image storage</p>
+        </div>
+      </div>
+    
+      <!-- Right Section: DevOps Stack -->
+      <div>
+        <div class="mb-6">
+          <h3 class="text-xl font-bold text-teal-700 subsection-header mb-2">DevOps & Deployment Stack:</h3>
+          <ul class="list-disc list-inside">
+            <li>AWS (EC2, ALB, Auto Scaling, S3, CDN, Route 53, CloudWatch, CloudTrail, WAF, SNS, IAM)</li>
+            <li>AWS ECS (Fargate), Docker (Containerization), Jenkins (CI/CD)</li>
+            <li>GitHub / GitLab (Version Control)</li>
+            <li>SonarQube (Cloud for code quality checks)</li>
+            <li>Cloudflare (for CDN and security)</li>
+            <li>SSL/TLS (HTTPS, secure connections)</li>
+            <li>Amazon Kinesis, AWS Global Accelerator</li>
+            <li>Amazon Elastic Kubernetes Service (EKS)</li>
+            <li>VPC (Virtual Private Cloud), Security Groups, IAM Roles</li>
+            <li>AWS Lambda with Step Functions</li>
+            <li>Amazon Simple Queue Service (SQS)</li>
+            <li>Load Balancers (ALB), Auto Scaling Groups</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section class="bg-white py-10 mt-10">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-6 text-center text-teal-700 section-header">Achievements</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <ul class="list-disc list-inside space-y-3 text-lg">
+          <li>Reduced deployment time by 40% with CI/CD pipelines</li>
+          <li>Achieved 99.9% uptime with auto-scaling and load balancing</li>
+        </ul>
+        <ul class="list-disc list-inside space-y-3 text-lg">
+          <li>Enhanced security with IAM policies and encryption</li>
+          <li>Supported 30% increased traffic during peak seasons</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots -->
+  <section class="bg-white py-10 mt-10">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-2xl font-semibold mb-6 text-center text-teal-700 section-header">Project Screenshots</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="border rounded-lg overflow-hidden shadow-md">
+          <img src="gastronomica-main-page.jpg" alt="Homepage Screenshot" class="w-full">
+          <p class="p-4 text-center">Homepage</p>
+        </div>
+        <div class="border rounded-lg overflow-hidden shadow-md">
+            <img src="gastronomica-login-page.jpg" alt="Product Page Screenshot" class="w-full">
+            <p class="p-4 text-center">Login Page</p>
+        </div>
+        <div class="border rounded-lg overflow-hidden shadow-md">
+          <img src="gastronomica-product-list-page.jpg" alt="Product Page Screenshot" class="w-full">
+          <p class="p-4 text-center">Product Listing</p>
+        </div>
+        <div class="border rounded-lg overflow-hidden shadow-md">
+            <img src="gastronomica-gift-card-page.jpg" alt="Product Page Screenshot" class="w-full">
+            <p class="p-4 text-center">Gift Cards</p>
+        </div>
+        <div class="border rounded-lg overflow-hidden shadow-md">
+            <img src="gastronomica-items-page.jpg" alt="Product Page Screenshot" class="w-full">
+            <p class="p-4 text-center">Items Listing</p>
+        </div>
+        <div class="border rounded-lg overflow-hidden shadow-md">
+            <img src="gastronomica-footer-page.jpg" alt="Product Page Screenshot" class="w-full">
+            <p class="p-4 text-center">Footer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 bg-teal-50 mt-10">
+    <p class="text-teal-700">© 2025 Gastronomica. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
